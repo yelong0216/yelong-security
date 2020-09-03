@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.yelong0216</groupId>
 	<artifactId>yelong-security</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 	<name>yelong-security</name>
 	<url>https://github.com/yelong0216/yelong-security.git</url>
@@ -19,28 +19,28 @@
 	</licenses>
 	<developers>
 		<developer>
-			<name>彭飞</name>
-			<email>17601085125@163.com</email>
+			<name>yelong</name>
+			<email>yelong010216@163.com</email>
 		</developer>
 	</developers>
 	<scm>
 		<url>https://github.com/yelong0216/yelong-security</url>
 	</scm>
 	<properties>
-		<yelong-commons.version>1.2.0</yelong-commons.version>
+		<commons-lang3.version>3.8.1</commons-lang3.version>
 		<bcprov-jdk15on.version>1.56</bcprov-jdk15on.version>
 	</properties>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
-			<groupId>com.github.yelong0216</groupId>
-			<artifactId>yelong-commons</artifactId>
-			<version>${yelong-commons.version}</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk15on</artifactId>
 			<version>${bcprov-jdk15on.version}</version>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<profiles>

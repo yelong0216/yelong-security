@@ -6,12 +6,13 @@ package org.yelong.security.sm4;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
-import org.yelong.commons.util.HexStrConvert;
+import org.yelong.security.support.HexStrConvert;
 
 /**
  * sm4工具
  * @author PengFei
  */
+@SuppressWarnings("restriction")
 public class SM4Utils {
 
 	private static final String ENCODING = "UTF-8";

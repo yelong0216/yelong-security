@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.yelong0216</groupId>
 	<artifactId>yelong-security</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<packaging>jar</packaging>
 	<name>yelong-security</name>
 	<url>https://github.com/yelong0216/yelong-security.git</url>
@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<commons-lang3.version>3.8.1</commons-lang3.version>
+		<commons-codec.version>1.11</commons-codec.version>
+		<commons-io.version>2.6</commons-io.version>
 		<bcprov-jdk15on.version>1.56</bcprov-jdk15on.version>
 	</properties>
 	<dependencies>
@@ -37,10 +39,28 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>${commons-lang3.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons-codec.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk15on</artifactId>
 			<version>${bcprov-jdk15on.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.7.0-M1</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<profiles>

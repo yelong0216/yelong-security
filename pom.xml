@@ -29,7 +29,7 @@
 	<properties>
 		<commons-lang3.version>3.8.1</commons-lang3.version>
 		<commons-codec.version>1.11</commons-codec.version>
-		<commons-io.version>2.6</commons-io.version>
+		<commons-io.version>2.7</commons-io.version>
 		<bcprov-jdk15on.version>1.56</bcprov-jdk15on.version>
 	</properties>
 	<dependencies>
